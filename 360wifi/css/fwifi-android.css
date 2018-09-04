@@ -1,0 +1,115 @@
+
+/* banner样式 */
+.banner{
+    background-color: #2da1ff;
+}
+.banner-box {
+    overflow: hidden;
+    width: 1240px;
+    margin: 0 auto;
+    height: 721px;
+    background: url(../imgs/t016c56582dd3d94efc.png) no-repeat;
+}
+.banner-box h2{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 50px;
+}
+.banner-box p{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+.banner-img{
+    position: relative;
+    width: 220px;
+    height: 40px;
+    margin: 0 auto;
+    background: url(../imgs/t014637776fae18783c.png) no-repeat;
+}
+.banner-img:hover{
+    background-position: 0 -96px;
+}
+.banner-img .code-free{
+    visibility: hidden;
+    left: 134px;
+    top: 52px;
+}
+.banner-img:hover .code-free{
+    visibility: visible;
+}
+
+/* 内容样式 */
+.content-width{
+    width: 1240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content-font h3{
+    font-size: 38px;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 72px;
+}
+.content-font p{
+    font-size: 12px;
+    color: #888999;
+    text-align: center;
+    margin-top: 28px;
+}
+.bg-gray{
+    background-color: #ecf6ff;
+}
+.hotspot{
+    height: 840px;
+    background: url(../imgs/t01c61afa1727c59aa3.png) no-repeat;
+}
+.detection{
+    height: 760px;
+    background: url(../imgs/t017a5c9574d12b3fc9.png) no-repeat;
+}
+.blacklist{
+    height: 760px;
+    background: url(../imgs/t01f175785e0bf922fb.png) no-repeat;
+}
+.speed{
+    height: 800px;
+    background: url(../imgs/t0139f898cb37cad383.png) no-repeat center top;
+}
+.concentration{
+    height: 799px;
+    background: url(../imgs/t01fdf594ef5f2af824.jpg) no-repeat;
+}
+.part-freeOnline{
+    padding-top: 70px;
+}
+.freeOline-btn{
+    display: block;
+    width: 180px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #3d98ff;
+    border: 1px solid #3d98ff;
+    border-radius: 4px;
+}
+.iphone-freeOline{
+    display: block;
+    color: #888999;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 32px;
+    margin-bottom: 145px;
+}
+.iphone-freeOline:hover{
+    text-decoration: underline;
+}    

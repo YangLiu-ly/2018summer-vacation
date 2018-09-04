@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            margin: 100px;
+            position: relative;
+        }
+        .overflow{
+            overflow: hidden;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .quadrangle {
+            width: 20px;
+            height: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            background: #ff0000;
+        }
+
+        .trapezoid {
+            width: 0px;
+            height: 0px;
+            border: 30px solid transparent;
+            border-right-color: #ff0000;
+            margin-top: -40px;
+            margin-left: -8px;
+        }
+
+        .lock-body {
+            height: 40px;
+            width: 50px;
+            background-color: #aaaaaa;
+            overflow: hidden;
+            position: absolute;
+            top: 25px;
+            z-index: 20;
+        }
+
+        .key-hole {
+            height: 6px;
+            width: 6px;
+            background-color: #000000;
+            margin-left: 22px;
+            margin-top: 17px;
+
+        }
+
+        .lock-head {
+            width: 40px;
+            height: 40px;
+            background-color: #000000;
+            border-radius: 50% 50% 0 0;
+            overflow: hidden;
+            margin-left: 5px;
+            margin-top: -60px;
+        }
+
+        .inner-circle {
+            width: 24px;
+            height: 24px;
+            background-color: #ffffff;
+            border-radius: 50% 50% 0 0;
+            margin-left: 8px;
+            margin-top: 8px;
+        }
+
+        .empty-circle {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000000;
+            border-radius: 50%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .line-across {
+            width: 21px;
+            height: 1px;
+            background-color: #000000;
+            margin-top: 20px;
+            margin-left: 8px;
+        }
+
+        .line-vertical {
+            width: 1px;
+            height: 21px;
+            background-color: #000000;
+            margin-top: -10px;
+            margin-left: 18px;
+        }
+        .line-xiegan {
+            width: 21px;
+            height: 1px;
+            background-color: #000000;
+            margin-top: 20px;
+            margin-left: 8px;
+            transform: rotate(45deg);
+        }
+
+        .line-fanxiegan {
+            width: 1px;
+            height: 21px;
+            background-color: #000000;
+            margin-top: -11px;
+            margin-left: 18px;
+            transform: rotate(45deg);
+        }
+        .smbox-circle{
+            width: 20px;
+            height: 30px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            position: absolute;
+            left: 5px;
+            top: -5px;
+            z-index: 30;
+        }
+        .hide-kuang{
+            height: 50px;
+            width: 50px;
+            background-color: #ffffff;
+            position: absolute;
+            left: -10px;
+            top: -30px;
+            z-index: 20;
+        }
+        .semicircle{
+            width: 30px;
+            height: 30px;
+            border: 1px solid #000000;
+            border-radius: 50%;
+        }
+        .mic-vertical{
+            width: 1px;
+            height: 18px;
+            background-color: #000000;
+            margin-left: 15px;
+        }
+        .mic-across{
+            width: 18px;
+            height: 1px;
+            background-color: #000000;
+            margin-left: 6px;
+        }
+        .harf-heart{
+            height: 40px;
+            width: 20px;
+            background-color: #ff0000;
+            border-radius: 20px 20px 0 0;
+        }
+        .right-heart{
+            transform: rotate(45deg);
+            position: absolute;
+            left: 16px;
+            top: 0;
+        }
+        .left-heart{
+            transform: rotate(-45deg);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+
+        /* 按钮类 */
+        .btn{            
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border: 1px solid #777;
+            border-radius: 50%;
+        }
+
+        .btn:before,
+        .btn:after{
+            content: '';
+            /* display: block; */
+            background: #777;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .btn:before{
+            width: 50%;
+            height: 1px;
+        }
+        .btn:after{
+            height: 50%;
+            width: 1px;
+        }
+
+        .btn-del,
+        .btn-close{
+            transform: rotate(45deg);
+        }
+        
+        .btn-close{
+            border: none;
+        }
+
+        .btn:hover{
+            border-color: #000;
+        }
+        .btn:hover:before,
+        .btn:hover:after{
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="quadrangle "></div>
+        <div class="trapezoid "></div>
+    </div>
+    <div class="box">
+        <div class="lock-body">
+            <div class="key-hole"></div>
+        </div>
+        <div class="lock-head">
+            <div class="inner-circle"></div>
+        </div>
+    </div>
+    <div class="box">
+        <a class="btn btn-add"></a>
+    </div>
+    <div class="box">
+        <a class="btn btn-del"></a>
+    </div>
+    <div class="box">
+        <a class="btn btn-close"></a>
+    </div>
+    <div class="box">
+        <div class="smbox-circle"></div>
+        <div class="hide-kuang"></div>
+        <div class="semicircle"></div>
+        <div class="mic-vertical"></div>
+        <div class="mic-across"></div>    
+    </div>
+    <div class="box ">
+        <div class="harf-heart left-heart"></div>
+        <div class="harf-heart right-heart"></div>
+    </div>
+
+</body>
+
+</html>

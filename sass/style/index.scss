@@ -1,0 +1,17 @@
+
+$width: 1000px;
+
+.container{
+    width: $width;
+    margin: 0 auto;
+
+    .box {
+        height: 200px;
+        width: $width / 4;
+        background: #000;
+        margin: 10px;
+        transition: all 0.3s;
+        transform: rotate(100deg);
+    }
+}
+

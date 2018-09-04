@@ -1,0 +1,130 @@
+
+/* 公共样式 */
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p,
+ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* img[alt="logo"]{
+    outline: 2px solid #f00;
+} */
+/* img[alt*="lo"]{
+    outline: 2px solid #f00;
+} */
+/* img[alt]{
+    outline: 2px solid #f00;
+} */
+
+
+/* input[disabled]{
+    background: #ccc;
+} */
+
+
+.content-center{
+    text-align: center;
+
+}
+.content{
+    margin: 50px auto;
+}
+.b-model-group{
+    width: 1132px;
+    margin: 0 auto;
+}
+.content>h2,.content-tv>h2{
+    font-weight: 400;
+
+}
+.content>p,.content-tv>p{
+    color: #777777;
+    font-size: 12px;
+}
+.b-model{
+    width: 170px;
+    float: left;
+    margin: 0 56px;
+    text-align: center;
+}
+
+.b-model + .b-model{
+    font-weight: bold;
+}
+
+.b-model-group>:first-child{
+    outline: 1px solid #ff6b6b;
+}
+
+.b-model span{    
+    font-size: 20px;
+}
+.b-model p,
+.tv p{
+    font-size: 14px;
+}
+
+
+.b-model p:first-letter{
+    font-size: 20px;
+}
+
+.m-bottom{
+    margin-bottom: 30px;
+}
+.red-shot{
+    width: 72px;
+    border: 0.5px solid #ff6b6b;
+    margin:16px auto; 
+
+}
+/* .clear{
+    clear: left;
+} */
+.content-tv{
+    width: 1132px; 
+    margin: 100px auto;
+}
+.tv{
+    float: left;
+    width: 547px;
+}
+.tv + tv{
+    margin-left: 28px;
+}
+
+.tv span{
+    display: inline-block;
+    width: 547px;
+    font-size: 20px;
+}
+.tv-group{
+    width: 1132px;
+    margin: 0 auto;
+}
+
+
+
+input{
+    outline: none;
+}
+
+button:focus{
+    outline: 1px solid #ff6b6b;
+}
+span::before{
+    content: '*';
+    color: #ff0000;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="radio" name="sex" value="男" />男
+		<input type="radio" name="sex" value="女" />女
+		<span id="test" class="test" title="提示">
+			<i>aaa</i>
+			bbbb
+		</span>
+		<!--<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>-->
+		<script type="text/javascript">
+			var sexs = document.getElementsByName('sex')
+			console.log(sexs)
+			
+//			var el = document.querySelector('body')
+//			var el = document.querySelector('[name="sex"]')
+//			var els = document.querySelectorAll('[name="sex"]')
+//			var el = document.querySelector('#test')
+			var el = document.querySelector('.test')
+			el.innerHTML = 'asdfasdfasdfasdf'
+			console.log(el.outerHTML)
+			console.log(el.textContent)
+//			el.setAttribute('data', 123)
+
+			var link = document.createElement('link')
+			link.href = '../css/style/float.css';
+			link.rel = 'stylesheet'
+			
+			var head = document.querySelector('head')
+			head.appendChild(link)
+			
+			
+//			el.remove()
+//			el.parentNode.removeChild(el)
+			
+//			console.log($('body'))
+		</script>
+	</body>
+</html>

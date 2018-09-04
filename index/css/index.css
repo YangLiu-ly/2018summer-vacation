@@ -1,0 +1,127 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.head{  
+    background-color: #181818;  
+    overflow: hidden;
+}
+.menu_logo{
+   float: left; 
+    vertical-align: middle;
+    margin: 14px 77px;
+}
+.menu_ul{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.menu_more{
+    float: left; 
+     vertical-align: middle;
+     margin: 22px 39px; 
+ }
+.menu_ul li{
+    display: inline-block;
+    color: #ffffff;
+    width: 95px;
+    text-align: center;
+    line-height: 60px;
+    padding: 0px;
+}
+.menu_ul li:hover{
+    background-color: #303030;
+}
+.kuang2{
+    height: 500px;
+    background-image: url("../imgs/head2.png");
+    background-position: center 0;
+}
+.service_div,.kuang4,.kuang6 {
+    padding: 1px 0px;
+}
+.content{
+    height: 355px;
+    width: 1210px;
+    margin: 99px auto;
+}
+.content img{
+    float: left;
+}
+h1{
+    font-size: 36px;
+    color: #23A6D1;
+}
+.content_font{  
+    margin-left: 508px;
+    padding-top: 48px;
+    
+}
+.content_font p{
+    font-size: 18px;
+}
+.content_font p span{
+    color: #23A6D1; 
+}
+
+.kuang3,.kuang5,.kuang7{
+    height: 550px;
+    padding: 1px 0px;
+    background-color: #FFF9ED;
+}
+
+.content2{
+    height: 355px;
+    width: 1210px;
+    margin: 99px auto;
+}
+.content2 img{
+    float: right;
+}
+.content_font2{ 
+    float: left; 
+    padding-top: 48px;
+    
+}
+.content_font2 p{
+    font-size: 18px;
+}
+.content_font2 p span{
+    color: #23A6D1; 
+}
+
+
+.content7{
+    height: 355px;
+    width: 1210px;
+    margin: 99px auto;
+}
+.content7 img{
+    float: right;
+}
+.content_font7{ 
+    float: left;
+    padding-top: 48px;
+    width: 655px;
+    
+}
+.content_font7 p{
+    font-size: 18px;
+}
+.content_font7 p span{
+    color: #23A6D1; 
+}
+.foot{
+    padding: 40px 0;
+    height: 131px;
+    font-size: 12px;
+    text-align: center;
+}
+    
+
+
+
+
+

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app">
+        <div class="input">
+            <span>留言</span>
+            <textarea name="" id="" cols="30" rows="10" placeholder="请输入话述"></textarea>
+            <button>留言</button>
+        </div>
+        <div class="content">
+            <ul class="activ"></ul>
+        </div>
+        <div class="footer">
+            <!-- <div class=""></div> -->
+            <div class="page-box"></div>
+        </div>
+    </div>
+    <script>
+         var addbtn =document.querySelector('.input button');
+        var msgListEl = document.querySelector('.content ul');
+        // var pagBox = document.querySelector('.footer');
+        var pagBox = document.querySelector('.page-box');
+        var content = document.querySelector('.content')
+        var floorNum = 1; 
+        var list = [];
+        var storageList = [];
+        var pageNum = 0;
+        var comments = 0;
+        // var nowData =[];
+
+        
+        
+        
+        //事件
+        function events(){
+            
+            addbtn.onclick = function(){
+                addLi();
+                setDate();
+                floorNum++;
+            } 
+            createBtn();
+            
+            //事件委托
+            msgListEl.addEventListener('click',function(e){
+                var target = e.target;
+                // console.log(target)
+                if(target.tagName ==='A'){
+                    msgListEl.removeChild(target.parentNode);
+                    var floor = target.previousElementSibling.innerHTML;
+                     //数组过滤
+                    uplist = list.filter(function(item){
+                        return ('#'+item.floorNum) != floor; 
+                    })
+                    delli(uplist);                    
+                }
+            })
+
+            // var pagBox = document.querySelector('.page-box');
+            // console.log(pageBtns)
+            pagBox.addEventListener('click', function(ele){
+                var target = ele.target;
+                if(target.tagName === 'A'){
+                    btnActive(target);
+                    var pageNum = parseInt(target.innerHTML) - 1;
+                    update(pageNum, 10);
+                }
+            })
+
+        }
+        events();
+
+
+
+        /** 
+        * 保存数据到缓存
+        */
+        function setDate() { 
+            var time = new Date().toLocaleString()
+            var message = document.querySelector('.input textarea').value; 
+            var pers = {
+                time: time,
+                message: message,
+                floorNum: floorNum,
+            }
+        
+            list.push(pers);
+            var data = JSON.stringify(list);
+            console.log(list);
+            window.localStorage.setItem('list', data);                        
+        }
+
+        /** 
+        * 读取缓存数据
+        */
+        function getDate() {
+            nowData = window.localStorage.getItem('list')
+            console.log(nowData)
+            if(nowData === null){
+                return;
+            }
+            list = JSON.parse(nowData);
+            console.log(list)
+            if(!list){
+                return;
+            }
+            update(0, 10);
+            floorNum = list[list.length-1].floorNum + 1;
+        }
+        getDate();
+
+
+
+        /** 
+        *生成按钮和分页页面
+        */
+        function createBtn(){
+            //从缓存中获取数据
+            var nowData = window.localStorage.getItem('list')
+
+            if(nowData === null){
+                return; 
+            }
+            list = JSON.parse(nowData);
+            if(list === null){
+            }
+            comments = list.length;
+            if(comments <= 10){
+                pageNum = 1;
+            }
+            pageNum = Math.ceil(comments /10);
+            //生成分页按钮 
+            var html = '';
+            for(var i=1; i<=pageNum; i++){
+                html += ' <a class="page-btn">'+ i +'</a>';
+            }
+            
+            pagBox.innerHTML = html;
+        }
+
+        /**
+         *生成分页
+         */
+        // function createPage(num){
+        //     //从缓存中获取数据
+        //     nowData = window.localStorage.getItem('list')
+        //     list = JSON.parse(nowData);
+        //     comments = list.length;
+        //     // var pageHtml = ''
+        //     // for(var i=0; i<=pageNum; i++){
+        //     //     if(i=0){
+        //     //         pageHtml += '<ul class="activ"></ul>'
+        //     //     }
+        //     //     pageHtml += '<ul></ul>'
+        //     // }
+        //     // content.innerHTML = pageHtml;
+        //     //在ul中加入li
+        //     for(var m=num-10; m<num && m>=num-10; m++){
+        //         var oneData = list[m];
+        //         reader(oneData);
+        //         if(m%10 === 0){
+        //             num++;
+        //         }
+        //     }
+
+        // }
+        /** 
+        *传入页码(pNum)和评论数(sNum)生成相关评论
+        */
+        function update(pNum, sNum){
+            // console.log(list)
+            console.log(storageList )
+            //清除前面的数据
+            msgListEl.innerHTML = '';
+            var nowData =window.localStorage.getItem('list');
+            list = JSON.parse(nowData);
+            for(var index=pNum*10; index<pNum*10+10 && index<list.length; index++){
+                reader(list[index], index);
+            }
+            floorNum = list[list.length-1].floorNum + 1;
+        }
+        // update(0, 10);
+
+        //按钮激活样式
+        function btnActive(ele){
+            var pagebtns = ele.parentNode.children;
+            for(i=0; i<pagebtns.length; i++){
+                pagebtns[i].className = 'page-btn';
+                // console.log(i)
+            }
+            ele.className = 'page-btn page-active'
+        }
+
+        /** 
+        *删除缓存内的评论
+        */
+        function delli(mdata){
+            // window.localStorage.removeItem('list');
+            mdata = JSON.stringify(mdata);
+            window.localStorage.setItem('list', mdata);
+        }
+
+        /** 
+        *添加评论到页面上
+        */
+        function addLi(){
+            var time = new Date().toLocaleString()
+            var message = document.querySelector('.input textarea').value;
+            var pers = {
+                time: time,
+                message: message,
+                floorNum: floorNum,
+            } 
+            reader(pers);   
+        }
+
+        /** 
+        *渲染页面
+        */
+        function reader(data){
+            var html = '';
+            var li = document.createElement('li');
+            html += '<time>'+ data.time +'</time>';
+            html += '<p>'+ data.message +'</p>';
+            html += '<span class="order">#'+ data.floorNum +'</span>';
+            html += '<a class="del-btn">删除</a> ';
+            li.innerHTML = html;
+            msgListEl.appendChild(li); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            box-sizing: border-box;
+        }
+
+        input {
+            padding: 0px;
+        }
+
+        .all {
+            width: 588px;
+            margin: 100px auto;
+            border: 1px solid #dddddd;
+            padding-right: 82px;
+        }
+
+        .all .div-group1{
+            margin-top: 30px;
+            margin-bottom: 40px;
+            padding-left: 78px;
+        }
+
+
+        .div-group {
+            margin-bottom: 30px;
+            text-align: right;
+        }
+
+        .div-group input {
+            height: 30px;
+        }
+
+        .div-group select,
+        .sel-color {
+            width: 350px;
+            float: right;
+        }
+
+        .nub {
+            width: 90px;
+        }
+
+        .div-group select,
+        .sel-color,
+        .nub {
+            height: 30px;
+            border: 1px solid #dad8db;
+            border-radius: 2px;
+        }
+    </style>
+    <link rel="stylesheet" href="./test3.css">
+</head>
+
+
+<body>
+    <div class="all">
+        <form>
+            <div class="div-group1">
+                <label class="margin-topandbottom">Plain&ensp;Text：
+                    <span>China</span>
+                </label>
+            </div>
+            <!-- <style scoped>
+                .div-group1 {
+                    background: #999;
+                }
+            </style> -->
+            <div class="div-group">
+                <img src="./../../img/star_03.png" alt="important" />
+                <label>Select：</label>
+
+                <select value="" placeholder="me">
+                    <option>Please select favourite colors</option>
+                    <option>China</option>
+                    <option>Canada</option>
+                    <option>America</option>
+                    <option>Franch</option>
+                </select>
+            </div>
+            <div class="div-group">
+                <img src="./../../img/star_03.png" alt="important">
+                <label>Select[multiple]：</label>
+                <input class="sel-color" type="text">
+            </div>
+            <div class="div-group3">
+                <label>InputNumber:</label>
+                <input class="nub" type="text" />
+                <span>machines</span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

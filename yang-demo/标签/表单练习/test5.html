@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        form{
+            margin-top: 25px;
+            padding-left: 35px;
+        }
+        .input-group{
+            margin-bottom: 20px;
+        }
+        .input-group label,.btn-group label,.check-div label{
+            text-align: right;
+            margin-right: 15px;
+        }
+        .input-group input{
+            border: 1px solid #d8d7dc;
+            height: 40px;
+            width: 380px;
+        }
+        .input-group input,textarea{
+            border-radius: 2px;
+        }
+        .input-group .yearmonth,.input-group .ntime{
+            display: inline-block;
+            border: 1px solid #d8d7dc;
+            box-sizing: border-box;
+            padding-left: 30px;
+        }
+        .input-group .yearmonth{
+            background-image: url(./../../img/时间_03.png);
+            background-position: 0px 2px;
+        }
+        .input-group .ntime{
+            background-image: url(./../../img/时间_05.png);
+            background-position: 0px 2px;
+        }
+        .input-group .active-time{
+            border: 0px;
+            height: 40px;
+            width: 140px;
+          
+        }
+        .cicle{
+            display: inline-block;
+            border-radius: 50%;
+            height: 16px;
+            width: 16px;
+            background-color:#ffffff; 
+        }
+        .cbtn{
+            display: inline-block;
+            border-radius: 36%;
+            line-height: 20px;
+            height: 20px;
+            width: 40px;
+            background-color: #d5d8e1;
+            box-sizing: border-box;
+            padding-top: 2px;
+            
+        }
+        .check-div{
+            margin-bottom: 45px;
+
+        }
+        .activ-nature-all{
+            display: inline-block;
+            margin-top: 40px;
+            position: relative;
+        }
+        .activ-nature{
+            display: inline-block;
+            margin-top: 25px;
+        }
+        .activ-nature input{
+            -webkit-appearance: none;
+            height: 13px;
+            width: 13px;
+            border: 1px solid #d9d9db;
+            border-radius: 1px; 
+            float: left;
+        }
+        .huodong-text{
+            position: absolute;
+            left: 35px;
+            top: 0px;
+
+        }
+        .activ-nature input:checked{
+
+        }
+
+    </style>
+</head>
+<body>     
+    <form action="">
+        <div class="input-group">
+            <label class="activ-name">活动名称</label>
+            <input type="text" placeholder="请输入活动名称">
+        </div>
+        <div class="input-group">
+            <label>活动名称</label>
+            <input type="text" placeholder="请选择活动区域">
+        </div>
+        <div class="input-group">
+            <label>活动时间</label>
+            <div class="yearmonth">            
+                <input class="active-time" type="datetime">
+            </div>&nbsp;-&nbsp;
+            <div class="ntime">              
+                <input class="active-time" type="text">
+            </div>
+        </div>
+        <div class="btn-group">
+            <label>即时配送</label>
+            <a class="cbtn"><i class="cicle"></i></a>
+        </div>
+        <div class="check-div">
+            <label id="huodong-text">活动性质</label>
+            <div class="activ-nature-all">
+                <div class="activ-nature"> 
+                    <input id="onlinecheck" type="checkbox"><label for="onlinecheck">美食/餐厅线上活动</label>
+                </div>
+                <div class="activ-nature">
+                    <input id="dituicheck" type="checkbox"><label for="dituicheck">地推活动</label>
+                </div><br/>
+                <div class="activ-nature">
+                    <input id="underlinecheck" type="checkbox"><label for="underlinecheck">线下主题活动</label>
+                </div>
+                <div class="activ-nature">                
+                    <input id="ppbg" type="checkbox"><label for="ppbg">单纯品牌曝光</label>
+                </div>
+            </div>
+        </div>
+        <div class="radio-div">
+            <label>特殊资源</label>
+            <label><input type="radio" name="danxuan">线上品牌赞助</label>
+            <label><input type="radio" name="danxuan">线下场地免费</label>
+        </div>
+        <div>
+            <label>活动形式</label>
+            <textarea class="text-kuang"></textarea>
+        </div>
+    </form>
+</body>
+</html>

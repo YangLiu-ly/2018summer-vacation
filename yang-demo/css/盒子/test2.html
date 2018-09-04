@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .div-1 {
+            width: 200px;
+            height: 100px;
+            background-color: bisque;
+            /* float: left; */
+           
+        }
+        p{
+            display: list-item;
+        }
+        .div-1-1{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            position: absolute;
+            /* left: 50%;
+            top: 50%;
+            margin-left: -200px;
+            margin-top: -200px; */
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        
+        /* .div-1-1{
+
+            left: auto;
+            top: auto;
+        } */
+        .absolute{
+            position: absolute;
+        }
+        .size200{
+            width: 200px;
+            height: 200px;
+        }
+
+        .div-4{
+            background-color: #0000ff;
+            left: 60px;
+            top: 60px;
+            z-index: 100;
+        }
+        .div-3{
+            background-color: #ff0000;
+            left: 30px;
+            top: 30px;
+            z-index: 100;
+        }
+        .div-5{
+            left: 90px;
+            top: 90px; 
+            background-color: #00ff00;
+        }
+        .clear {
+            clear: both;
+        }  
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <!-- <div class="div-1">
+            <img src="./../../img/star_07.png" alt="">
+
+        </div> -->
+        <!-- <div class="div-1-1">
+            
+        </div> -->
+        <!-- <div class="clear"></div> -->
+        <div class="absolute size200 div-3">3</div>
+        <div class="absolute size200 box-blue">4</div>
+        <div class="absolute size200 div-5">5</div>
+    </div>
+
+</body>
+
+</html>

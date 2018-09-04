@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--选择ie浏览器最新版本的内核-->
+    <title>Document</title>
+    <style>
+        /* 公共类 */
+
+        span {
+            display: inline-block;
+            width: 157px;
+            height: 158px;
+            margin: 1px 1px 0 1px;
+            font-size: 52px;
+            font-family: '宋体';
+            text-align: center;
+            line-height: 157px;
+        }
+
+        .gray-btn {
+            background-color: #c5c7c9;
+            float: left;
+        }
+
+        .orange-btn {
+            color: #ffffff;
+            font-size: 52px;
+            background-color: #f98310;
+            float: right;
+        }
+
+        /* 结构样式 */
+
+        .app {
+            width: 640px;
+            margin: 0 auto;
+            border: 1px solid #ff1252;
+            background-color: #000000;
+        }
+
+        .btn-group {
+            padding: 2px;
+        }
+
+        .div-float-left {
+            float: left;
+        }
+
+        .div-float-right {
+            float: right;
+        }
+
+        /* 可视面板 */
+
+        .view {
+            width: 640px;
+            height: 340px;
+            background-color: #000000;
+            position: relative;
+        }
+
+        .input-view {
+            color: #ffffff;
+            height: 150px;
+            width: 640px;
+            border: none;
+            background-color: #000000;
+            font-size: 120px;
+            position: absolute;
+            bottom: 3px;
+            padding-right: 0;
+        }
+
+        .input-view:focus {
+            outline: none;
+        }
+
+        .btn-group {
+            width: 640px;
+            position: relative;
+        }
+
+        /* 按钮-第一行灰色 */
+
+        .menu-first-line {
+            float: left;
+            width: 478px;
+        }
+
+        .nub {
+            display: inline-block;
+            width: 478px;
+        }
+
+        /* 1-9 */
+
+        .one-nien {
+            width: 478px;
+        }
+
+        .btn-zero {
+            width: 316px;
+        }
+
+        .function {
+            width: 160px;
+            position: absolute;
+            left: 479px;
+            top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="view">
+            <input class="input-view" type="text">
+        </div>
+        <div class="btn-group">
+            <div class="menu-first-line div-float-left">
+                <span class="gray-btn">AC</span>
+                <span class="gray-btn">+/-</span>
+                <span class="gray-btn">%</span>
+            </div>
+            <div class="nub">
+                <div class="one-nien div-float-left">
+                    <span class="gray-btn">1</span>
+                    <span class="gray-btn">2</span>
+                    <span class="gray-btn">3</span>
+                    <span class="gray-btn">4</span>
+                    <span class="gray-btn">5</span>
+                    <span class="gray-btn">6</span>
+                    <span class="gray-btn">7</span>
+                    <span class="gray-btn">8</span>
+                    <span class="gray-btn">9</span>
+                </div>
+                <div class="zero-point div-float-left">
+                    <span class="gray-btn btn-zero">0</span>
+                    <span class="gray-btn btn-point">.</span>
+                </div>
+            </div>
+            <div class="function div-float-right">
+                <span class="orange-btn">÷</span>
+                <span class="orange-btn">×</span>
+                <span class="orange-btn">-</span>
+                <span class="orange-btn">+</span>
+                <span class="orange-btn">=</span>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

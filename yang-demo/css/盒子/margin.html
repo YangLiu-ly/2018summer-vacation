@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            background: #aaa;
+            height: 100px;
+            margin: 40px auto;
+            /* padding: 1px 0; */
+            /* border: 1px solid #ddd; */
+        }
+
+        .interval{
+            height: 1px;
+            /* line-height: 1; */
+        }
+
+        .container .box{
+            background: #00a;
+        }
+
+        .container{
+            overflow: hidden;
+            /* padding-top: 1px; */
+            /* border-top: 1px solid rgba(0,0,0,0); */
+        }
+
+        .empty{
+            margin: 40px auto;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- 空元素 -->
+    <div class="empty"></div>
+
+    <!-- 父子 -->
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <!-- 上下 -->
+    <div class="box"></div>
+    <div class="interval"></div>
+    <div class="box"></div>
+</body>
+</html>

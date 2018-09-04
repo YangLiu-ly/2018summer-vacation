@@ -1,0 +1,15 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container .box {
+  height: 200px;
+  width: 250px;
+  background: #000;
+  margin: 10px;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+  -webkit-transform: rotate(100deg);
+      -ms-transform: rotate(100deg);
+          transform: rotate(100deg);
+}

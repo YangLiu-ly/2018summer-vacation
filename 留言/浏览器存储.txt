@@ -1,0 +1,20 @@
+
+
+cookie 本地存储
+域，路径，过期时间，权限
+key: value
+
+    document.cookie;
+        有过期时间
+
+    window.localStorage;
+        getItem
+        setItem
+        clear
+        removeItem
+        必须手动清除
+
+session 会话存储
+    window.sessionStorage
+    随会话存在
+

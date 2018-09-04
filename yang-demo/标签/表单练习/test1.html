@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .security-code{
+            width: 100px;
+        }
+        .login-form{
+            width: 500px;            
+            font-size: 14px;
+        }
+
+        .input-group{
+            margin-bottom: 20px;
+        }
+        .input-group label{
+            float: left;
+            width: 20%;     
+            height: 38px;    
+            line-height: 38px;   
+            text-align: right;
+            margin-right: 10px;
+        }
+        .input-group input{
+            height: 36px;
+            width: 76%;
+            padding: 0;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <form class="login-form" enctype="multipart/form-data" method="post">
+        <div class="input-group">
+            <label>手机/邮箱</label>
+            <input readonly value="690168598@qq.com" name="email" class="bg-yellow" placeholder="手机/邮箱" />
+        </div>  
+        <div class="input-group">
+            <label>密码</label>
+            <input type="password" name="password" class="bg-yellow" placeholder="密码" />
+        </div>      
+        <div class="input-group">
+            <label>验证码</label>
+            <input disabled value="asdf" name="security-code" class="security-code" placeholder="验证码"/>
+        </div>  
+        <div class="input-group">
+            <label>说明</label>
+            <!-- <textarea style="width:75%;min-width:75%;max-width:75%; height: 120px"></textarea> -->
+            <textarea style="width:75%;height: 120px;resize: none;" placeholder="这里是说明"></textarea>
+        </div>
+        <div class="input-group">
+            <label></label>
+            <input type="submit" value="注 册"/>
+            <button type="button">注 册</button>
+        </div>
+    </form>
+</body>
+</html>

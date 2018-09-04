@@ -1,0 +1,137 @@
+
+/* banner样式 */
+.banner{
+    height: 605px;
+    background-color: #d7ffde;
+}
+.banner-content{
+    width: 1240px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../imgs/t01a9a9dd2856161c9d.png) no-repeat center top;
+    background-size: 1240px 605px;
+}
+/* 内容部分样式 */
+
+/* .content h1{
+    font-size: 37px;
+    color: #000;
+    margin-bottom: 45px;
+}
+.content p{
+    font-size: 19px;
+    color: #575757;
+} */
+.content{
+    background-color: #fff;
+}
+.width-center{
+    width: 1240px;
+    margin: 0 auto;
+}
+.content .part-1{
+    height: 705px;
+    background: url(../imgs/42.jpg) no-repeat;
+}
+.content .part-2{
+    position: relative;
+    height: 600px;
+    background: url(../imgs/31.jpg) no-repeat;
+    background-size: 1240px 600px;
+    overflow: hidden;
+}
+.part-2 span{
+    display: block;
+    width: 40px;
+    height: 70px;
+    background: url(../imgs/箭头.png) no-repeat;
+
+}
+.part-2 h2{
+    font-size: 31px;
+    color: #fff;
+    margin-bottom: 28px;
+    font-weight: 400;
+}
+.part-2 li{
+    font-size: 15px;
+    color: #fff;
+    list-style: none;
+    margin-bottom: 8px;
+}
+.part-2-fonts{
+    overflow: hidden;
+    position: absolute;
+    left: 120px;
+    top: 50px;
+}
+.part-2 a{
+    display: block;
+    margin-top: 260px;
+}
+.part-2 img{
+    width: 70px;
+    height: 70px;
+}
+
+.product-explain{
+    font-size: 11px;
+    line-height: 20px;
+    color: #fff;
+    overflow: hidden;
+    position: absolute;
+    right: 65px;
+    bottom: 36px;
+}
+.last-btn{
+    transform: rotate(180deg);
+}
+
+.part-3{
+    height: 848px;
+    background: url(../imgs/44.jpg) no-repeat;
+}
+.part-4{
+    height: 703px;
+    background: url(../imgs/45.jpg) no-repeat;
+}
+.part-5{
+    height: 778px;
+    background: url(../imgs/46.jpg) no-repeat;
+}
+
+.perameter-table{
+    width: 970px;
+    margin: 0 auto;
+}
+.perameter-table table{
+    width: 970px;
+    border: 1px solid #ddd;
+    color: #888999;
+    vertical-align: center;
+}
+.perameter-table caption{
+    font-size: 35px;
+    color: #454347;
+    margin-top: 100px;
+    margin-bottom: 56px;
+}
+.perameter-table td{
+    border: 1px solid #ddd;
+    color: #888999;
+    height: 56px;
+    font-size:14px;
+    text-indent: 23px;
+}
+
+.part-7{
+    overflow: hidden;
+    margin-bottom: 100px;
+    background: url(../imgs/47.jpg) no-repeat; 
+}
+.part-7 .now-buy-btn{
+    width: 167px;
+    margin: 0 auto;
+    margin-top: 624px;
+}

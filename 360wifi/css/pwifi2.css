@@ -1,0 +1,95 @@
+/* banner属性 */
+.banner{
+    height: 590px;
+    background-color: #f6efd7;    
+}
+.banner-content{
+    width: 1240px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../imgs/t01834b2bc218c22b1a.png) no-repeat center top;
+    background-size: 1240px 590px;
+}
+
+/* content内容样式 */
+.content{
+    margin-top: 10px;
+}
+.function-width{
+    width: 850px;
+    margin: 0 auto;
+}
+.user-function .step-one{
+    height: 624px;
+    background: url(../imgs/2-随身wifi-2代_07.png) no-repeat;
+}
+.user-function .step-two{
+    height: 510px;
+    background: url(../imgs/2-随身wifi-2代_09.png) no-repeat;
+}
+.user-function .step-three{
+    width: 850px;
+    margin: 0 auto;
+    height: 709px;
+    background: url(../imgs/t01d78e32dfdbec4ed1.png) no-repeat center top;
+    background-size: 990px 709px;
+}
+.merit-width{
+    width: 990px;
+    margin: 0 auto;
+}
+.part-1{
+    height: 711px;
+    background: url(../imgs/t01f3cae7a845c25fde.png) no-repeat;
+}
+.part-2{
+    height: 710px;
+    background: url(../imgs/t014edb59b8a41591bb.png) no-repeat;
+}
+.part-3{
+    height: 523px;
+    background: url(../imgs/t01a41a8a518adc29aa.png) no-repeat;
+}
+.part-4{
+    height: 495px;
+    background: url(../imgs/t019a9f27c41ab42714.png) no-repeat;
+}
+.part-5{
+    height: 716px;
+    background: url(../imgs/t01cb79c007be985a9d.png) no-repeat;
+}
+.part-6{
+    height: 666px;
+    background: url(../imgs/t01f966a00f3662b9c1.png) no-repeat;
+}
+/* 产品参数表格样式 */
+.perameter-table{
+    width: 970px;
+    margin: 0 auto;
+}
+.perameter-table table{
+    width: 970px;
+    border: 1px solid #ddd;
+    color: #888999;
+    vertical-align: center;
+}
+.perameter-table caption{
+    font-size: 35px;
+    color: #454347;
+    margin-top: 100px;
+    margin-bottom: 56px;
+}
+.perameter-table td{
+    border: 1px solid #ddd;
+    color: #888999;
+    height: 56px;
+    font-size:14px;
+    text-indent: 23px;
+}
+.buy-box-red{
+    width: 612px;
+    margin: 30px auto 100px;
+}
+.buy-box-red a + a{
+    margin-left: 50px;
+}
